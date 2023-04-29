@@ -1,6 +1,6 @@
 resource "aws_instance" "instancia-dev" {
   ami = "ami-0a695f0d95cefc163"
-  instance_type = "t2.micro"
+  instance_type = "t3a.nano"
    vpc_security_group_ids = [aws_security_group.sg-dev.id]
   key_name = "lab_ec2"
   tags = {
